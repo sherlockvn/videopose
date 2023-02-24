@@ -1,6 +1,12 @@
 name: torch_tmp
 channels:
+  - anaconda
+  - pytorch
   - defaults
+  - conda-forge/label/gcc7
+  - conda-forge/label/cf201901
+  - conda-forge
+  - omnia
 dependencies:
   - backcall=0.1.0=py_0
   - bzip2=1.0.6=h14c3975_1002
@@ -9,7 +15,7 @@ dependencies:
   - cffi=1.12.2=py37hf0e25f4_1
   - cuda90=1.0=h6433d27_0
   - cuda92=1.0=0
-  - cudatoolkit=8.0=3
+  - cudatoolkit=9.2=0
   - decorator=4.4.0=py_0
   - freetype=2.10.0=he983fc9_0
   - intel-openmp=2019.3=199
@@ -52,11 +58,13 @@ dependencies:
   - wheel=0.33.1=py37_0
   - xz=5.2.4=h14c3975_1001
   - zlib=1.2.11=h14c3975_1004
+  - pybind11
+  - geos
   - pip:
     - colorama==0.4.1
     - cvbase==0.5.5
     - cycler==0.10.0
-    - cython==0.29.6
+    - cython==0.29.20
     - easydict==1.7
     - imageio==2.5.0
     - ipdb==0.12
@@ -64,12 +72,12 @@ dependencies:
     - kiwisolver==1.0.1
     - matplotlib==3.0.3
     - networkx==2.2
-    - onnx==1.4.1
+    - onnx==1.6.0
     - opencv-python==4.0.1.23
     - pandas==0.24.2
     - pillow==6.0.0
     - protobuf==3.7.1
-    - pycocotools==2.0.0
+    - pycocotools==2.0.6
     - pyparsing==2.4.0
     - python-dateutil==2.8.0
     - pytz==2018.9
@@ -87,5 +95,5 @@ dependencies:
     - typing==3.6.6
     - typing-extensions==3.7.2
     - yacs==0.1.6
-prefix: /home/xyliu/miniconda3/envs/torch_tmp
+prefix: /home/sherlock/miniconda3/envs/torch_tmp
 
